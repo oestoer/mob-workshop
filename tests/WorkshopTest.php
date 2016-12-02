@@ -32,4 +32,11 @@ class WorkshopTest extends \PHPUnit_Framework_TestCase
 
         self::assertTrue($number > 9);
     }
+
+    public function testItGeneratesNumberLessThanOneHundred()
+    {
+        $number = $this->evenNumberGenerator->generateNumber();
+
+        self::assertTrue($number < 100);
+    }
 }
