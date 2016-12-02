@@ -2,8 +2,8 @@
 
 class EvenNumberGenerator
 {
-    public function generateNumber()
+    public function generateNumber() : int
     {
-        return 2;
+        return 12;
     }
 }
