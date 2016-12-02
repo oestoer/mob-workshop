@@ -39,4 +39,13 @@ class WorkshopTest extends \PHPUnit_Framework_TestCase
 
         self::assertTrue($number < 100);
     }
+
+    public function testItGeneratesNumberThatSumOfItsDigitsEqualsSix()
+    {
+        $kitten = $this->evenNumberGenerator->generateNumber();
+
+        $karol = str_split((string)$kitten);
+
+        self::assertEquals($karol[0] + $karol[1], 6);
+    }
 }
